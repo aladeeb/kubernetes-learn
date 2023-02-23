@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: myapp
-  lable:
+  labels:
     app: myapp
     environment: production
 spec:
