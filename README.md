@@ -20,7 +20,7 @@ Kubernetes notes.
 ---
 
 ## Concepts:
-- **Pod**: 
+- **Pod**: it's the smallest object in k8s and it contains the container or multiple containers conncet together throgh the same network namespace and the same storage.
 - **Service**: 
 - **Volume**: 
 - **Namespace**: 
@@ -28,6 +28,17 @@ Kubernetes notes.
 
 
 ---
+
+## Pods:
+### Commands:
+- `kubectl get pods`: retreives the pods and its details.
+  - `-o wide`: shows the IP and the node that runs the pod.
+- `kubectl describe pod POD_NAME`: retreives the pod details like containers inside it, network or events.
+- `kubectl run POD_NAME --image=IMAGE_NAME`: runs a pod with a specific name and specific image.
+- `kubectl create -f FILE_NAME.yml`: creates a pod from yml file.
+- ``:
+- ``:
+- ``:
 
 ```
 kubectl run hello-minikube

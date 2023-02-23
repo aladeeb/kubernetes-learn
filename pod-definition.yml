@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp
+  lable:
+    app: myapp
+    environment: production
+spec:
+  containers: #list/array of containers
+    - name: myapp-container
+      image: nginx 
+
+
+# kubectl create -f pod-definition.yml
