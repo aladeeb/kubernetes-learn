@@ -17,3 +17,20 @@ Kubernetes notes.
 - kubelet: the main service in the node and it controls the state as per the kube-apiserver.
 - kube-proxy: proxy service that runs on each node and responsible for the host subnetting and exposing the containers to the external world and perform request forwarding to the respctive containers/pods.
 
+---
+
+## Concepts:
+- **Pod**: 
+- **Service**: 
+- **Volume**: 
+- **Namespace**: 
+- **Deployment**: 
+
+
+---
+
+```
+kubectl run hello-minikube
+kubectl cluster-info
+kubectl get nodes
+```
