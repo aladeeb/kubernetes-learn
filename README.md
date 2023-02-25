@@ -47,8 +47,8 @@ Kubernetes notes.
 - `kubectl get replicaset`: get all replicasets
 - `kubectl delete replicaset REPLICASET_NAME`: delete specific replicaset.
 - `kubectl replace -f FILE_NAME.yml`: updates the existing replicaset.
-- `kubectl scale --replicas=NUM_OF_REPLICAS -f FILE_NAME.yml`: increase/decrease the replicas to NUM_OF_REPLICAS.
-- `kubectl scale --replicas=NUM_OF_REPLICAS replicaset REPLICA_NAME`: increase/decrease the replicas to NUM_OF_REPLICAS.
+- `kubectl scale -f FILE_NAME.yml --replicas=NUM_OF_REPLICAS`: increase/decrease the replicas to NUM_OF_REPLICAS.
+- `kubectl scale replicaset REPLICA_NAME --replicas=NUM_OF_REPLICAS`: increase/decrease the replicas to NUM_OF_REPLICAS.
 - 
 
 ---
