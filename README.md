@@ -32,16 +32,16 @@ Kubernetes notes.
 ## Pods:
 ### Commands:
 - `kubectl get pods`: retreives the pods and its details.
-  - `-o wide`: shows the IP and the node that runs the pod.
+  - `-o wide`: shows the IP and more details about the node that runs the pod.
 - `kubectl describe pod POD_NAME`: retreives the pod details like containers inside it, network or events.
 - `kubectl run POD_NAME --image=IMAGE_NAME`: runs a pod with a specific name and specific image.
+  - `--dry-run=client -o=yaml`: output the pod yaml
 - `kubectl create -f FILE_NAME.yml`: creates a pod from yml file.
-- ``:
-- ``:
-- ``:
+
 
 ```
 kubectl run hello-minikube
 kubectl cluster-info
 kubectl get nodes
+kubectl run redis --image=redis --dry-run=client -o yaml
 ```
