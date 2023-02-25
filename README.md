@@ -19,7 +19,7 @@ Kubernetes notes.
 
 ---
 
-## Concepts:
+## Concepts
 - **Pod**: it's the smallest object in k8s and it contains the container or multiple containers conncet together throgh the same network namespace and the same storage.
 - **Service**: 
 - **Volume**: 
@@ -29,7 +29,7 @@ Kubernetes notes.
 
 ---
 
-## Pods:
+## Pods
 ### Commands:
 - `kubectl get pods`: retreives the pods and its details.
   - `-o wide`: shows the IP and more details about the node that runs the pod.
@@ -37,6 +37,27 @@ Kubernetes notes.
 - `kubectl run POD_NAME --image=IMAGE_NAME`: runs a pod with a specific name and specific image.
   - `--dry-run=client -o=yaml`: output the pod yaml
 - `kubectl create -f FILE_NAME.yml`: creates a pod from yml file.
+- `kubectl apply -f FILE_NAME.yml`: apply changes on a pod from yml file.
+- 
+
+---
+
+## ReplicaSet
+### Commands:
+- `kubectl get replicaset`: get all replicasets
+- `kubectl delete replicaset REPLICASET_NAME`: delete specific replicaset.
+- `kubectl replace -f FILE_NAME.yml`: updates the existing replicaset.
+- `kubectl scale --replicas=NUM_OF_REPLICAS -f FILE_NAME.yml`: increase/decrease the replicas to NUM_OF_REPLICAS.
+- `kubectl scale --replicas=NUM_OF_REPLICAS replicaset REPLICA_NAME`: increase/decrease the replicas to NUM_OF_REPLICAS.
+- 
+
+---
+
+## Controllers
+- ReplicationController
+- ReplicaSet
+- 
+---
 
 
 ```

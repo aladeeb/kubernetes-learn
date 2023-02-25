@@ -5,10 +5,11 @@ metadata:
   labels:
     app: myapp
     environment: production
+    type: front-end
 spec:
   containers: #list/array of containers
     - name: myapp-container
       image: nginx 
 
 
-# kubectl create -f nginx-pod.yml
+# kubectl create -f pod-definition.yml
