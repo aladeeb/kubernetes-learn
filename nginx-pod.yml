@@ -11,4 +11,4 @@ spec:
       image: nginx 
 
 
-# kubectl create -f pod-definition.yml
+# kubectl create -f nginx-pod.yml
