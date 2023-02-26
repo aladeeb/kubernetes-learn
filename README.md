@@ -38,31 +38,38 @@ Kubernetes notes.
   - `--dry-run=client -o=yaml`: output the pod yaml
 - `kubectl create -f FILE_NAME.yml`: creates a pod from yml file.
 - `kubectl apply -f FILE_NAME.yml`: apply changes on a pod from yml file.
-- 
+
 
 ---
 
 ## ReplicaSet
 ### Commands:
-- `kubectl get replicaset`: get all replicasets
+- `kubectl get replicaset`: get all replicasets.
 - `kubectl delete replicaset REPLICASET_NAME`: delete specific replicaset.
 - `kubectl replace -f FILE_NAME.yml`: updates the existing replicaset.
 - `kubectl scale -f FILE_NAME.yml --replicas=NUM_OF_REPLICAS`: increase/decrease the replicas to NUM_OF_REPLICAS.
 - `kubectl scale replicaset REPLICA_NAME --replicas=NUM_OF_REPLICAS`: increase/decrease the replicas to NUM_OF_REPLICAS.
-- 
 
 ---
 
+## Deployment
+### Commands:
+- `kubectl get deployment`: get all deployments.
+- `kubectl delete deployment DEPLOYMENT_NAME`: delete specific deployment.
+- `kubectl replace -f FILE_NAME.yml`: updates the existing deployment.
+
+---
 ## Controllers
 - ReplicationController
 - ReplicaSet
-- 
+- Deployment
 ---
 
 
 ```
 kubectl run hello-minikube
 kubectl cluster-info
+kubectl get all
 kubectl get nodes
 kubectl run redis --image=redis --dry-run=client -o yaml
 ```

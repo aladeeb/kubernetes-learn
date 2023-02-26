@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deployment
+  labels:
+    name: myapp
+    version: 1.0.3
+spec:
+  template:
+    metadata:
+      name: myapp
+      labels:
+        app: myapp
+        environment: production
+    spec:
+      containers: #list/array of containers
+        - name: myapp-container
+          image: nginx 
+  replicas: 3
+  selector:
+    matchLabels:
+      app: myapp
