@@ -46,6 +46,7 @@ Kubernetes notes.
 ### Commands:
 - `kubectl get replicaset`: get all replicasets.
 - `kubectl delete replicaset REPLICASET_NAME`: delete specific replicaset.
+- `kubectl create -f FILE_NAME.yml`: creates a replicaset from yml file.
 - `kubectl replace -f FILE_NAME.yml`: updates the existing replicaset.
 - `kubectl scale -f FILE_NAME.yml --replicas=NUM_OF_REPLICAS`: increase/decrease the replicas to NUM_OF_REPLICAS.
 - `kubectl scale replicaset REPLICA_NAME --replicas=NUM_OF_REPLICAS`: increase/decrease the replicas to NUM_OF_REPLICAS.
@@ -56,7 +57,13 @@ Kubernetes notes.
 ### Commands:
 - `kubectl get deployment`: get all deployments.
 - `kubectl delete deployment DEPLOYMENT_NAME`: delete specific deployment.
+- `kubectl create -f FILE_NAME.yml`: creates a deployment from yml file.
+- `kubectl apply -f FILE_NAME.yml`: updates the existing deployment.
 - `kubectl replace -f FILE_NAME.yml`: updates the existing deployment.
+- `kubectl rollout status deployment/DEPLOYMENT_NAME`: retreives the status of the deployment.
+- `kubectl rollout history deployment/DEPLOYMENT_NAME`: retrieves the history of the deployment.
+- `kubectl rollout undo deployment/DEPLOYMENT_NAME`: rollback a previous revision of the deployment.
+- `kubectl set image deployment DEPLOYMENT_NAME IMAGE_NAME=NEW_IMAGE_NAME`: change the image in the deployment.
 
 ---
 ## Controllers
