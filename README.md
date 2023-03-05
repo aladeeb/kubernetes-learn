@@ -60,9 +60,9 @@ Kubernetes notes.
 - `kubectl create -f FILE_NAME.yml`: creates a deployment from yml file.
 - `kubectl apply -f FILE_NAME.yml`: updates the existing deployment.
 - `kubectl replace -f FILE_NAME.yml`: updates the existing deployment.
-- `kubectl rollout status deployment/DEPLOYMENT_NAME`: retreives the status of the deployment.
-- `kubectl rollout history deployment/DEPLOYMENT_NAME`: retrieves the history of the deployment.
-- `kubectl rollout undo deployment/DEPLOYMENT_NAME`: rollback a previous revision of the deployment.
+- `kubectl rollout status deployment.apps/DEPLOYMENT_NAME`: retreives the status of the deployment.
+- `kubectl rollout history deployment.apps/DEPLOYMENT_NAME`: retrieves the history of the deployment.
+- `kubectl rollout undo deployment.apps/DEPLOYMENT_NAME`: rollback a previous revision of the deployment.
 - `kubectl set image deployment DEPLOYMENT_NAME IMAGE_NAME=NEW_IMAGE_NAME`: change the image in the deployment.
 
 ---
